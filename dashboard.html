@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskbaji | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h2>Taskbaji Dashboard</h2>
+    <div id="userEmail"></div>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <div class="sidebar">
+    <button onclick="goTo('dashboard')">Dashboard</button>
+    <button onclick="goTo('task')">Start Now</button>
+    <button onclick="goTo('withdraw')">Withdraw</button>
+    <button id="ownerBtn" style="display:none;" onclick="goTo('owner')">Owner Dashboard</button>
+  </div>
+  <div class="container" id="dashboardContent">
+    <h3>Welcome to your Dashboard!</h3>
+    <p>ইমেইল: <span id="dashboardEmail"></span></p>
+    <p>আপনার মোট পয়েন্ট: <span id="userPoints">0</span></p>
+    <div id="ownerSection" style="display:none;">
+      <p>Owner Income (All Users Combined): <span id="totalPoints">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

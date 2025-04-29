@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskbaji | Withdraw</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h2>Withdraw Request</h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <div class="container">
+    <input type="text" id="upi" placeholder="আপনার UPI আইডি লিখুন"/>
+    <input type="number" id="amount" placeholder="টাকার পরিমাণ"/>
+    <button onclick="sendWithdraw()">Send Request</button>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
