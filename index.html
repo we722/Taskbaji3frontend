@@ -2,42 +2,27 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <title>Taskbaji CAPTCHA</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    #container {
-      margin-top: 50px;
-    }
-    input, button {
-      padding: 10px;
-      font-size: 16px;
-    }
-    #feedback {
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    #balance-text {
-      margin-top: 20px;
-      font-size: 20px;
-      color: green;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskbaji - CAPTCHA Task</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="container">
-    <h1>Taskbaji CAPTCHA</h1>
-    <p>CAPTCHA প্রশ্ন: <span id="captcha-question"></span></p>
-    <input type="text" id="captcha-answer" placeholder="আপনার উত্তর লিখুন">
-    <button onclick="submitAnswer()">জমা দিন</button>
-    <p id="feedback"></p>
-    <p id="balance-text">আপনার ব্যালেন্স: ₹<span id="points">0.00</span></p>
+  <div id="sidebar">
+    <h2>Taskbaji</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Start Now</a></li>
+      <li><a href="#">Withdraw</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+  <div id="task-container">
+    <p>CAPTCHA প্রশ্ন: <span id="question"></span></p>
+    <input type="text" id="answer" placeholder="উত্তর দিন" />
+    <button id="submit">সাবমিট</button>
+    <p>পয়েন্ট: <span id="score">0</span></p>
+    <p>INR ব্যালেন্স: ₹<span id="inr">0.00</span></p>
   </div>
   <script src="script.js"></script>
 </body>
